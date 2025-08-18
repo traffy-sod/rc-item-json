@@ -1,67 +1,21 @@
 {
   "features": [
-  "Steel C-channel chassis for durability",
-  "AR45 portal axles for extra ground clearance",
-  "LCXU single-speed transmission with all-metal gears",
-  "Optimized suspension geometry to reduce torque twist",
-  "Aluminum adjustable coilover, oil-filled shocks",
-  "Officially licensed Falken Wildpeak tires",
-  "Officially licensed Black Rhino Primm wheels",
-  "Officially licensed DeMello Off-road bumpers",
-  "Pre-painted truck body with scale accessories: snorkel, half cage, storage case, rock sliders, mirrors, and door handles",
-  "Sealed receiver box protects electronics",
-  "Axial Slickrock 35T brushed motor installed",
-  "Spektrum 40A waterproof brushed ESC installed",
-  "Spektrum SLT3 3-channel 2.4GHz radio system",
-  "Spektrum SR515 5-channel DSMR Sport Receiver"
-],
+    "Feature 1",
+    "Feature 2",
+    "Feature 3"
+  ],
   "included": [
-  "Axial SCX10 III Base Camp Rock Crawler RTR",
-  "Pre-painted truck body with scale accessories installed",
-  "Axial Slickrock 35T brushed motor (installed)",
-  "Spektrum 40A waterproof brushed ESC (installed)",
-  "Spektrum SLT3 2.4GHz 3-channel transmitter",
-  "Spektrum SR515 DSMR 5-channel receiver (installed in sealed box)",
-  "Steering servo (installed)",
-  "Rock sliders, bumpers, mirrors, snorkel, and cage (installed accessories)",
-  "Quick Start Guide"
-],
+    "Item 1",
+    "Item 2",
+    "Item 3"
+  ],
   "specs": [
-    ["Approximate Assembly Time", "No Assembly Required"],
-    ["Battery", "Sold Separately"],
-    ["Body", "Pre-Painted"],
-    ["Charger", "Sold Separately"],
-    ["Chassis", "Adjustable Steel C-channel"],
-    ["Completion Level", "Ready-To-Run"],
-    ["Connector Type", "IC3"],
-    ["Differential", "Locked"],
-    ["Drive Type", "Forward/Brake/Reverse"],
-    ["Drivetrain", "4WD"],
-    ["Gear Pitch", "32-Pitch"],
-    ["Ground Clearance", "2.5\" (64 mm)"],
-    ["LiPo Compatibility", "2S, 3S"],
-    ["Motor Type", "Brushed"],
-    ["Pinion", "14T"],
-    ["Power Type", "Electric"],
-    ["Product Height", "9.75\" (248 mm)"],
-    ["Product Length", "20.75\" (527 mm)"],
-    ["Product Weight", "7.57 lb (3.43 kg)"],
-    ["Product Width", "9.25\" (235 mm)"],
-    ["Radio", "Included"],
-    ["Receiver", "Included"],
-    ["Scale", "1/10"],
-    ["Servos", "Included"],
-    ["Shock Type", "Aluminum coil-over, Oil-filled"],
-    ["Spur Gear", "52"],
-    ["Suspension", "Multi-Link Solid Axle"],
-    ["Tire Tread", "Falken Wildpeak"],
-    ["Vehicle Size", "Standard"],
-    ["Vehicle Type", "Rock Crawler"],
-    ["Wheel Hex Size", "12 mm"],
-    ["Wheelbase", "12.3\" (312 mm)"]
+    ["Spec Label 1", "Value 1"],
+    ["Spec Label 2", "Value 2"],
+    ["Spec Label 3", "Value 3"]
   ],
   "gallery": {
-    "youtube": "https://youtu.be/YGV8Tl5K4ks",
+    "youtube": "VIDEO_ID_OR_URL",
     "images": [
       "https://yourcdn.com/image1.jpg",
       "https://yourcdn.com/image2.jpg"
@@ -70,13 +24,13 @@
   "manuals": [
     {
       "title": "Owner's Manual PDF",
-      "url": "https://www.horizonhobby.com/on/demandware.static/-/Sites-horizon-master/default/Manuals/AXI-1375_MANUAL_EN.pdf"
+      "url": "https://yourcdn.com/manual.pdf"
     }
   ],
   "exploded": [
     {
       "title": "Exploded View PDF",
-      "url": "https://www.horizonhobby.com/on/demandware.static/-/Sites-horizon-master/default/Manuals/AXI-1375_EXPLODED_VIEW.pdf"
+      "url": "https://yourcdn.com/exploded.pdf"
     }
   ]
 }
