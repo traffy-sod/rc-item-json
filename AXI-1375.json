@@ -1,0 +1,35 @@
+{
+  "features": [
+    "Ready to run",
+    "Oil filled shocks",
+    "2.4 GHz radio system",
+    "Smart charging support"
+  ],
+  "included": [
+    "Vehicle",
+    "2.4 GHz transmitter",
+    "Battery",
+    "USB charger",
+    "Quick Start Guide"
+  ],
+  "specs": [
+    ["Length", "410 mm"],
+    ["Width", "195 mm"],
+    ["Weight", "1.9 kg"],
+    ["Battery", "2S LiPo compatible"],
+    ["Radio", "2 channel 2.4 GHz"]
+  ],
+  "gallery": {
+    "youtube": "VIDEO_ID_OR_URL",
+    "images": [
+      "https://yourcdn.com/img1.jpg",
+      "https://yourcdn.com/img2.jpg"
+    ]
+  },
+  "manuals": [
+    {"title": "Owner's Manual PDF", "url": "https://yourcdn.com/manual.pdf"}
+  ],
+  "exploded": [
+    {"title": "Exploded View A PDF", "url": "https://yourcdn.com/exploded-a.pdf"}
+  ]
+}
