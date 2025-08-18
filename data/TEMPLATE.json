@@ -1,0 +1,36 @@
+{
+  "features": [
+    "Feature 1",
+    "Feature 2",
+    "Feature 3"
+  ],
+  "included": [
+    "Item 1",
+    "Item 2",
+    "Item 3"
+  ],
+  "specs": [
+    ["Spec Label 1", "Value 1"],
+    ["Spec Label 2", "Value 2"],
+    ["Spec Label 3", "Value 3"]
+  ],
+  "gallery": {
+    "youtube": "VIDEO_ID_OR_URL",
+    "images": [
+      "https://yourcdn.com/image1.jpg",
+      "https://yourcdn.com/image2.jpg"
+    ]
+  },
+  "manuals": [
+    {
+      "title": "Owner's Manual PDF",
+      "url": "https://yourcdn.com/manual.pdf"
+    }
+  ],
+  "exploded": [
+    {
+      "title": "Exploded View PDF",
+      "url": "https://yourcdn.com/exploded.pdf"
+    }
+  ]
+}
