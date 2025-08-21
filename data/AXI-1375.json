@@ -67,11 +67,7 @@
     ["Wheelbase", "12.3\" (312 mm)"]
   ],
   "gallery": {
-    "youtube": "https://youtu.be/YGV8Tl5K4ks",
-    "images": [
-      "https://yourcdn.com/image1.jpg",
-      "https://yourcdn.com/image2.jpg"
-    ]
+    "youtube": "https://youtu.be/YGV8Tl5K4ks"
   },
   "manuals": [
     {
