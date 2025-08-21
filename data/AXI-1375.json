@@ -1,8 +1,9 @@
 {
 "featureTiles": [
-  { "top": "Size",           "bottom": "X-Truck" },
-  { "top": "Top Speed",      "bottom": "50+ mph" },
-  { "top": "Power",          "bottom": "8s Brushless" }
+  { "top": "Size",              "bottom": "1/10 Standard" },
+  { "top": "LiPo Compatibility","bottom": "2S-3S" },
+  { "top": "Power",             "bottom": "35T Brushed" },
+  { "top": "Battery & Charger", "bottom": "Required" }
 ],
   "features": [
   "Steel C-channel chassis for durability",

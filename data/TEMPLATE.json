@@ -4,7 +4,7 @@
     { "top": "Size",           "bottom": "X-Truck" },
     { "top": "Top Speed",      "bottom": "50+ mph" },
     { "top": "Power",          "bottom": "8s Brushless" },
-    { "top": "Sold Separately","bottom": "Battery & Charger" }
+    { "top": "Battery & Charger", "bottom": "Required/Included" }
   ],
 
   "features": [
