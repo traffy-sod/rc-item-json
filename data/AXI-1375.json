@@ -2,8 +2,7 @@
 "featureTiles": [
   { "top": "Size",           "bottom": "X-Truck" },
   { "top": "Top Speed",      "bottom": "50+ mph" },
-  { "top": "Power",          "bottom": "8s Brushless" },
-  { "top": "Sold Separately","bottom": "Battery & Charger" }
+  { "top": "Power",          "bottom": "8s Brushless" }
 ],
   "features": [
   "Steel C-channel chassis for durability",
