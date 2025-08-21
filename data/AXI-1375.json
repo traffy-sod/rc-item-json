@@ -1,11 +1,10 @@
 {
 "featureTiles": [
-    { "top": "X-Truck", "bottom": "Size" },
-    { "top": "50+ mph", "bottom": "Top Speed" },
-    { "top": "8s Brushless", "bottom": "Power" },
-    { "top": "Battery & Charger", "bottom": "Sold Separately" }
-  ],
-
+  { "top": "Size",           "bottom": "X-Truck" },
+  { "top": "Top Speed",      "bottom": "50+ mph" },
+  { "top": "Power",          "bottom": "8s Brushless" },
+  { "top": "Sold Separately","bottom": "Battery & Charger" }
+],
   "features": [
   "Steel C-channel chassis for durability",
   "AR45 portal axles for extra ground clearance",
