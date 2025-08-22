@@ -1,8 +1,6 @@
-<!-- Per-page config: edit only the attributes on this div -->
-<div id="feature-root" 
-    data-section="sections/featured/models.html"
-    data-base="https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/data/" 
-    data-part="AXI-1375">
+<!-- Per-page config -->
+<div id="feature-root" data-section="sections/featured/models.html" data-part="" data-base=""
+    data-source="https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/data/AXI-1375.json">
 </div>
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -23,27 +21,40 @@
         fetch(BASE + sectionPath, { cache: "force-cache" })
             .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
             .then(function (html) {
-                var tmp = document.createElement("div"); tmp.innerHTML = html;
-                var sectionRoot = tmp.querySelector(".tabs-models") || tmp.firstElementChild;
+                var tmp = document.createElement("div");
+                tmp.innerHTML = html;
 
-                // pass-through JSON settings if present
+                // 1) find section, append it first
+                var sectionRoot = tmp.querySelector(".tabs-models") || tmp.firstElementChild;
+                if (!sectionRoot) throw new Error("No .tabs-models in section");
+
+                // 2) pass-through BEFORE scripts, even if empty strings
                 ["data-base", "data-part", "data-v", "data-source"].forEach(function (attr) {
-                    var val = root.getAttribute(attr);
-                    if (val && sectionRoot) sectionRoot.setAttribute(attr, val);
+                    if (root.hasAttribute(attr)) sectionRoot.setAttribute(attr, root.getAttribute(attr));
                 });
 
-                // inject and re-execute inline scripts
-                while (tmp.firstChild) {
-                    var node = tmp.firstChild; tmp.removeChild(node);
+                // 3) append the main section to DOM
+                root.appendChild(sectionRoot);
+
+                // 4) then re-execute inline scripts in that section
+                var nodes = Array.prototype.slice.call(tmp.childNodes);
+                nodes.forEach(function (node) {
+                    if (node === sectionRoot) return;
                     if (node.tagName === "SCRIPT") {
                         var s = document.createElement("script");
                         if (node.src) s.src = node.src; else s.textContent = node.textContent;
-                        (sectionRoot || root).appendChild(s);
+                        sectionRoot.appendChild(s);
                     } else {
                         root.appendChild(node);
                     }
-                }
+                });
             })
-            .catch(function (err) { console.warn("Section load failed:", err); });
+            .catch(function (err) {
+                console.warn("Section load failed:", err);
+                var errBox = document.createElement("div");
+                errBox.style.cssText = "margin:8px 0;padding:10px;border:1px solid #c33;color:#fff;background:#a33;font:14px/1.4 system-ui";
+                errBox.textContent = "Content unavailable. Loader error: " + err.message;
+                root.appendChild(errBox);
+            });
     })();
 </script>
