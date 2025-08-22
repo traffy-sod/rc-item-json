@@ -434,7 +434,7 @@
       if (!url) {
         const part = root.getAttribute('data-part') || '';
         const v = root.getAttribute('data-v');
-        const base = root.getAttribute('data-base') || 'https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/data/';
+        const base = root.getAttribute('data-base') || 'https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/data/';
         if (part) {
           url = base.replace(/\/?$/, '/') + encodeURIComponent(part) + '.json' + (v ? ('?v=' + encodeURIComponent(v)) : '');
         }
