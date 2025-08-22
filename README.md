@@ -27,7 +27,7 @@ Page that uses models layout and AXI-1375.json:
 ```html
 <div id="feature-root"
      data-section="sections/featured/models.html"
-     data-base="https://cdn.jsdelivr.net/gh/<YourUser>/RC-item-JSON@main/data/"
+     data-base="https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/data/"
      data-part="AXI-1375"></div>
 ```
 
@@ -35,7 +35,7 @@ Page that uses models layout but a different item:
 ``` html
 <div id="feature-root"
      data-section="sections/featured/models.html"
-     data-base="https://cdn.jsdelivr.net/gh/<YourUser>/RC-item-JSON@main/data/"
+     data-base="https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/data/"
      data-part="VS4-10-PHOENIX"></div>
 ```
 
@@ -45,7 +45,7 @@ Page with a direct JSON URL (skip base/part):
      data-section="sections/featured/models.html"
      data-part=""
      data-base=""
-     data-source="https://cdn.jsdelivr.net/gh/<YourUser>/RC-item-JSON@main/data/AXI-1375.json"></div>
+     data-source="https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/data/AXI-1375.json"></div>
 ```
 * ()`models.html` script already checks `data-source` first)
 

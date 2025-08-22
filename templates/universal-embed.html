@@ -1,14 +1,14 @@
-<!-- Per-page config: edit these attributes only -->
+<!-- Per-page config: edit only the attributes on this div -->
 <div id="feature-root" data-section="sections/featured/models.html"
-    data-base="https://cdn.jsdelivr.net/gh/<YourUser>/RC-item-JSON@main/data/" data-part="AXI-1375">
+    data-base="https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/data/" data-part="AXI-1375">
 </div>
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script>
     (function () {
-        var GH_USER = "<YourUser>";     // set once
-        var GH_REPO = "RC-item-JSON";   // set once
-        var GH_TAG = "main";           // branch or tag
+        var GH_USER = "traffy-sod";
+        var GH_REPO = "rc-item-json";
+        var GH_TAG = "main";
 
         var root = document.getElementById("feature-root");
         if (!root) return;
@@ -18,30 +18,21 @@
 
         var BASE = "https://cdn.jsdelivr.net/gh/" + GH_USER + "/" + GH_REPO + "@" + GH_TAG + "/";
 
-        // Fetch the HTML skeleton from GitHub and inject it
         fetch(BASE + sectionPath, { cache: "force-cache" })
             .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
             .then(function (html) {
-                var tmp = document.createElement("div");
-                tmp.innerHTML = html;
-
-                // Find the inserted section root and apply JSON settings if present
+                var tmp = document.createElement("div"); tmp.innerHTML = html;
                 var sectionRoot = tmp.querySelector(".tabs-models") || tmp.firstElementChild;
 
-                var dataBase = root.getAttribute("data-base");
-                var dataPart = root.getAttribute("data-part");
-                var dataV = root.getAttribute("data-v"); // optional cache buster
+                // pass-through JSON settings if present
+                ["data-base", "data-part", "data-v", "data-source"].forEach(function (attr) {
+                    var val = root.getAttribute(attr);
+                    if (val && sectionRoot) sectionRoot.setAttribute(attr, val);
+                });
 
-                if (sectionRoot) {
-                    if (dataBase) sectionRoot.setAttribute("data-base", dataBase);
-                    if (dataPart) sectionRoot.setAttribute("data-part", dataPart);
-                    if (dataV) sectionRoot.setAttribute("data-v", dataV);
-                }
-
-                // Move nodes and re-execute inline scripts
+                // inject and re-execute inline scripts
                 while (tmp.firstChild) {
-                    var node = tmp.firstChild;
-                    tmp.removeChild(node);
+                    var node = tmp.firstChild; tmp.removeChild(node);
                     if (node.tagName === "SCRIPT") {
                         var s = document.createElement("script");
                         if (node.src) s.src = node.src; else s.textContent = node.textContent;
