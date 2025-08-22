@@ -428,7 +428,7 @@
 
 <script>
     (function () {
-        // Robust root selection for Square
+        // robust root selection (Square can null out currentScript)
         var scriptEl = document.currentScript;
         var root =
             (scriptEl && scriptEl.closest('.tabs-models')) ||
@@ -436,7 +436,7 @@
             document.querySelector('.tabs-models');
         if (!root) return;
 
-        // Build URL from attributes: data-source > data-base+data-part > default base
+        // build URL - prefers data-source
         let url = root.getAttribute('data-source');
         if (!url) {
             const part = root.getAttribute('data-part') || '';
@@ -446,10 +446,13 @@
         }
         if (!url) { showFallback(); return; }
 
-        fetch(url, { cache: 'no-store' })
-            .then(r => { if (!r.ok) throw new Error('fetch failed: ' + r.status); return r.json(); })
+        console.info('[models] JSON URL:', url); // helps verify in Console
+
+        fetch(url, { cache: 'no-store', mode: 'cors' })
+            .then(r => { if (!r.ok) throw new Error('fetch failed ' + r.status); return r.json(); })
             .then(data => renderFromJson(data))
-            .catch(() => showFallback());
+            .catch(err => { console.warn('[models] fetch error:', err); showFallback(); });
+
 
         function renderFromJson(data) {
             /* FEATURES */
