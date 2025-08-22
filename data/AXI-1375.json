@@ -21,22 +21,29 @@
   "Spektrum SLT3 3-channel 2.4GHz radio system",
   "Spektrum SR515 5-channel DSMR Sport Receiver"
 ],
-  "included": [
-  "Axial SCX10 III Base Camp Rock Crawler RTR",
-  "Pre-painted truck body with scale accessories installed",
-  "Axial Slickrock 35T brushed motor (installed)",
-  "Spektrum 40A waterproof brushed ESC (installed)",
-  "Spektrum SLT3 2.4GHz 3-channel transmitter",
-  "Spektrum SR515 DSMR 5-channel receiver (installed in sealed box)",
-  "Steering servo (installed)",
-  "Rock sliders, bumpers, mirrors, snorkel, and cage (installed accessories)",
-  "Quick Start Guide"
-],
+  "included": {
+    "inBox": [
+      "Axial SCX10 III Base Camp Rock Crawler RTR",
+      "Pre-painted truck body with scale accessories installed",
+      "Axial Slickrock 35T brushed motor (installed)",
+      "Spektrum 40A waterproof brushed ESC (installed)",
+      "Spektrum SLT3 2.4GHz 3-channel transmitter",
+      "Spektrum SR515 DSMR 5-channel receiver (installed in sealed box)",
+      "Steering servo (installed)",
+      "Rock sliders, bumpers, mirrors, snorkel, and cage (installed accessories)",
+      "Quick Start Guide"
+    ],
+    "required": [
+      "7.4V or 11.1V LiPo battery pack",
+      "Compatible LiPo charger",
+      "4 AA batteries for transmitter"
+    ]
+  },
   "specs": [
     ["Approximate Assembly Time", "No Assembly Required"],
-    ["Battery", "Sold Separately"],
+    ["Battery", "7.4V or 11.1V LiPo (sold separately)"],
     ["Body", "Pre-Painted"],
-    ["Charger", "Sold Separately"],
+    ["Charger", "Compatible LiPo charger (sold separately)"],
     ["Chassis", "Adjustable Steel C-channel"],
     ["Completion Level", "Ready-To-Run"],
     ["Connector Type", "IC3"],
