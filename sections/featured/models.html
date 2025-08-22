@@ -1,18 +1,19 @@
-<section class="tabs-models" role="region" aria-label="Product details" data-part="AXI-1375" data-v="1">
-  <style>
+<section class="tabs-models" role="region" aria-label="Product details"></section>
+<style>
     /* Theme */
     .tabs-models {
-      --accent: #fff;
-      --muted: #9aa0a6;
-      --hover: #c7cbd1;
-      --indicator-h: 3px;
-      --gap: 10px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: normal; /* used to be .1em */
-      text-align: center;
+        --accent: #fff;
+        --muted: #9aa0a6;
+        --hover: #c7cbd1;
+        --indicator-h: 3px;
+        --gap: 10px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: normal;
+        /* used to be .1em */
+        text-align: center;
     }
 
     /* Predictable sizing */
@@ -20,56 +21,56 @@
     .tabs-models *,
     .tabs-models *::before,
     .tabs-models *::after {
-      box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     .tabs-models .tabset,
     .tabs-models .panels {
-      overflow: visible;
+        overflow: visible;
     }
 
     /* Full width container */
     .tabs-models .tabset {
-      width: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 0 8px;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0 8px;
     }
 
     /* Tab bar */
     .tabs-models .controls {
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: var(--gap);
-      align-items: end;
-      margin: 0 auto 8px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, .12);
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: var(--gap);
+        align-items: end;
+        margin: 0 auto 8px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, .12);
     }
 
     .tabs-models .controls label {
-      position: relative;
-      cursor: pointer;
-      user-select: none;
-      padding: 8px 0;
-      color: var(--muted);
-      font-weight: 600;
-      transition: color .18s ease;
-      white-space: nowrap;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        padding: 8px 0;
+        color: var(--muted);
+        font-weight: 600;
+        transition: color .18s ease;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .tabs-models .controls label:hover {
-      color: var(--hover);
+        color: var(--hover);
     }
 
     /* Hidden radios */
     .tabs-models input[type="radio"] {
-      position: absolute;
-      left: -9999px;
+        position: absolute;
+        left: -9999px;
     }
 
     /* Active tab */
@@ -79,86 +80,86 @@
     #tm-gallery:checked~.controls label[for="tm-gallery"],
     #tm-manuals:checked~.controls label[for="tm-manuals"],
     #tm-exploded:checked~.controls label[for="tm-exploded"] {
-      color: var(--accent);
+        color: var(--accent);
     }
 
     /* Desktop underline */
     @media (min-width:641px) {
-      .tabs-models .controls .indicator {
-        display: none;
-      }
+        .tabs-models .controls .indicator {
+            display: none;
+        }
 
-      .tabs-models .controls label::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -12px;
-        width: min(64%, 180px);
-        height: var(--indicator-h);
-        background: #fff;
-        border-radius: 2px;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity .18s ease;
-        pointer-events: none;
-      }
+        .tabs-models .controls label::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -12px;
+            width: min(64%, 180px);
+            height: var(--indicator-h);
+            background: #fff;
+            border-radius: 2px;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity .18s ease;
+            pointer-events: none;
+        }
 
-      #tm-features:checked~.controls label[for="tm-features"]::after,
-      #tm-included:checked~.controls label[for="tm-included"]::after,
-      #tm-specs:checked~.controls label[for="tm-specs"]::after,
-      #tm-gallery:checked~.controls label[for="tm-gallery"]::after,
-      #tm-manuals:checked~.controls label[for="tm-manuals"]::after,
-      #tm-exploded:checked~.controls label[for="tm-exploded"]::after {
-        opacity: 1;
-      }
+        #tm-features:checked~.controls label[for="tm-features"]::after,
+        #tm-included:checked~.controls label[for="tm-included"]::after,
+        #tm-specs:checked~.controls label[for="tm-specs"]::after,
+        #tm-gallery:checked~.controls label[for="tm-gallery"]::after,
+        #tm-manuals:checked~.controls label[for="tm-manuals"]::after,
+        #tm-exploded:checked~.controls label[for="tm-exploded"]::after {
+            opacity: 1;
+        }
     }
 
     /* Mobile slider */
     .tabs-models .indicator {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: var(--indicator-h);
-      width: calc(100% / 6);
-      background: #fff;
-      transform: translateX(0%);
-      transition: transform .22s cubic-bezier(.2, .6, .2, 1);
-      border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: var(--indicator-h);
+        width: calc(100% / 6);
+        background: #fff;
+        transform: translateX(0%);
+        transition: transform .22s cubic-bezier(.2, .6, .2, 1);
+        border-radius: 2px;
     }
 
     #tm-included:checked~.controls .indicator {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
 
     #tm-specs:checked~.controls .indicator {
-      transform: translateX(200%);
+        transform: translateX(200%);
     }
 
     #tm-gallery:checked~.controls .indicator {
-      transform: translateX(300%);
+        transform: translateX(300%);
     }
 
     #tm-manuals:checked~.controls .indicator {
-      transform: translateX(400%);
+        transform: translateX(400%);
     }
 
     #tm-exploded:checked~.controls .indicator {
-      transform: translateX(500%);
+        transform: translateX(500%);
     }
 
     /* Panels */
     .tabs-models .panels {
-      padding: 18px 8px;
-      text-align: left;
+        padding: 18px 8px;
+        text-align: left;
     }
 
     .tabs-models .panel {
-      display: none;
-      animation: fade .18s ease;
-      font-size: 1rem;
-      line-height: 1.6;
-      text-transform: none;
-      letter-spacing: normal;
+        display: none;
+        animation: fade .18s ease;
+        font-size: 1rem;
+        line-height: 1.6;
+        text-transform: none;
+        letter-spacing: normal;
     }
 
     #tm-features:checked~.panels #tm-panel-features,
@@ -167,237 +168,237 @@
     #tm-gallery:checked~.panels #tm-panel-gallery,
     #tm-manuals:checked~.panels #tm-panel-manuals,
     #tm-exploded:checked~.panels #tm-panel-exploded {
-      display: block;
+        display: block;
     }
 
     @keyframes fade {
-      from {
-        opacity: 0
-      }
+        from {
+            opacity: 0
+        }
 
-      to {
-        opacity: 1
-      }
+        to {
+            opacity: 1
+        }
     }
 
     /* Cleaner feature tiles (professional, low-chrome) */
     .tabs-models .feature-tiles {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      margin: 0 0 22px;
-      border: 0;
-      background: transparent;
-      border-radius: 0;
-      overflow: visible;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+        margin: 0 0 22px;
+        border: 0;
+        background: transparent;
+        border-radius: 0;
+        overflow: visible;
     }
 
     .tabs-models .feature-tiles .tile {
-      background: #1b1b1b;
-      border: 1px solid rgba(255, 255, 255, .10);
-      border-radius: 12px;
-      padding: 16px 14px;
-      text-align: center;
-      min-height: 86px;
+        background: #1b1b1b;
+        border: 1px solid rgba(255, 255, 255, .10);
+        border-radius: 12px;
+        padding: 16px 14px;
+        text-align: center;
+        min-height: 86px;
     }
 
     .tabs-models .feature-tiles .t-top {
-      font-size: .86rem;
-      line-height: 1.2;
-      font-weight: 600;
-      color: var(--muted);
-      letter-spacing: .04em;
+        font-size: .86rem;
+        line-height: 1.2;
+        font-weight: 600;
+        color: var(--muted);
+        letter-spacing: .04em;
     }
 
     .tabs-models .feature-tiles .t-bottom {
-      margin-top: 6px;
-      font-weight: 750;
-      font-size: clamp(1.05rem, 2vw, 1.28rem);
-      letter-spacing: .02em;
-      color: #fff;
-      text-transform: none;
+        margin-top: 6px;
+        font-weight: 750;
+        font-size: clamp(1.05rem, 2vw, 1.28rem);
+        letter-spacing: .02em;
+        color: #fff;
+        text-transform: none;
     }
 
     /* Lists calmer */
     .tabs-models .panel ul {
-      list-style: disc;
-      margin: 0;
-      padding: 0 0 0 1.2em;
+        list-style: disc;
+        margin: 0;
+        padding: 0 0 0 1.2em;
     }
 
     .tabs-models .panel ul li {
-      margin: 0 0 10px;
-      line-height: 1.55;
-      font-size: .97rem;
-      color: #e6e6e6;
-      font-weight: 500;
-      letter-spacing: .01em;
+        margin: 0 0 10px;
+        line-height: 1.55;
+        font-size: .97rem;
+        color: #e6e6e6;
+        font-weight: 500;
+        letter-spacing: .01em;
     }
 
     @media (min-width:900px) {
-      .tabs-models .panel ul.two-col {
-        columns: 2;
-        column-gap: 32px;
-      }
+        .tabs-models .panel ul.two-col {
+            columns: 2;
+            column-gap: 32px;
+        }
 
-      .tabs-models .panel ul.two-col li {
-        break-inside: avoid;
-      }
+        .tabs-models .panel ul.two-col li {
+            break-inside: avoid;
+        }
     }
 
     /* Specs grid */
     .tabs-models .specs {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px 18px;
-      margin: 6px 0 0;
-      max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px 18px;
+        margin: 6px 0 0;
+        max-width: 100%;
     }
 
     .tabs-models .specs div {
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, .08);
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .08);
     }
 
     .tabs-models .specs strong {
-      display: block;
-      font-weight: 700;
-      letter-spacing: .06em;
-      color: var(--muted);
-      font-size: .85rem;
-      text-transform: uppercase;
-      margin-bottom: 2px;
+        display: block;
+        font-weight: 700;
+        letter-spacing: .06em;
+        color: var(--muted);
+        font-size: .85rem;
+        text-transform: uppercase;
+        margin-bottom: 2px;
     }
 
     @media (min-width:900px) {
-      .tabs-models .specs {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+        .tabs-models .specs {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
     }
 
     /* Gallery + video */
     .tabs-models .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
     }
 
     .tabs-models .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
     }
 
     .tabs-models .video {
-      width: 100%;
-      max-width: 100%;
-      margin: 0 0 16px 0;
-      aspect-ratio: 16/9;
-      background: #000;
-      border-radius: 8px;
-      overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 16px 0;
+        aspect-ratio: 16/9;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
     }
 
     .tabs-models .video iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
     }
 
     /* PDF viewer */
     .tabs-models .pdf {
-      width: 100%;
-      max-width: 100%;
-      margin: 0 0 16px 0;
-      aspect-ratio: 4/3;
-      background: #111;
-      border-radius: 8px;
-      overflow: hidden;
-      position: relative;
-      border: 1px solid rgba(255, 255, 255, .08);
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 16px 0;
+        aspect-ratio: 4/3;
+        background: #111;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, .08);
     }
 
     @supports not (aspect-ratio:4 / 3) {
-      .tabs-models .pdf {
-        height: 520px;
-      }
+        .tabs-models .pdf {
+            height: 520px;
+        }
     }
 
     .tabs-models .pdf iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
     }
 
     /* Mobile */
     @media (max-width:640px) {
-      .tabs-models {
-        letter-spacing: .06em;
-      }
+        .tabs-models {
+            letter-spacing: .06em;
+        }
 
-      .tabs-models .controls {
-        grid-template-columns: none;
-        grid-auto-flow: column;
-        --tab-w: 160px;
-        grid-auto-columns: var(--tab-w);
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        gap: 0;
-        padding-bottom: 10px;
-        scroll-snap-type: x mandatory;
-      }
+        .tabs-models .controls {
+            grid-template-columns: none;
+            grid-auto-flow: column;
+            --tab-w: 160px;
+            grid-auto-columns: var(--tab-w);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            gap: 0;
+            padding-bottom: 10px;
+            scroll-snap-type: x mandatory;
+        }
 
-      .tabs-models .controls::-webkit-scrollbar {
-        display: none;
-      }
+        .tabs-models .controls::-webkit-scrollbar {
+            display: none;
+        }
 
-      .tabs-models .controls label {
-        padding: 12px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: clamp(.8rem, 3.3vw, .95rem);
-        white-space: nowrap;
-        width: 100%;
-        scroll-snap-align: start;
-        text-align: center;
-      }
+        .tabs-models .controls label {
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(.8rem, 3.3vw, .95rem);
+            white-space: nowrap;
+            width: 100%;
+            scroll-snap-align: start;
+            text-align: center;
+        }
 
-      .tabs-models .indicator {
-        display: block;
-        width: var(--tab-w);
-        border-radius: 2px;
-      }
+        .tabs-models .indicator {
+            display: block;
+            width: var(--tab-w);
+            border-radius: 2px;
+        }
 
-      /* Mobile tiles stay light */
-      .tabs-models .feature-tiles {
-        grid-template-columns: repeat(2, 1fr);
-      }
+        /* Mobile tiles stay light */
+        .tabs-models .feature-tiles {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-      .tabs-models .panels {
-        padding: 12px 2px;
-      }
+        .tabs-models .panels {
+            padding: 12px 2px;
+        }
 
-      /* Mobile PDF */
-      .tabs-models .pdf {
-        margin: 12px 0;
-        border-radius: 12px;
-        aspect-ratio: auto;
-        height: clamp(360px, 70svh, 80vh);
-        touch-action: pan-y pinch-zoom;
-        overscroll-behavior: contain;
-      }
+        /* Mobile PDF */
+        .tabs-models .pdf {
+            margin: 12px 0;
+            border-radius: 12px;
+            aspect-ratio: auto;
+            height: clamp(360px, 70svh, 80vh);
+            touch-action: pan-y pinch-zoom;
+            overscroll-behavior: contain;
+        }
 
-      .tabs-models .pdf iframe {
-        pointer-events: auto;
-      }
+        .tabs-models .pdf iframe {
+            pointer-events: auto;
+        }
     }
-  </style>
+</style>
 
-  <div class="tabset" role="tablist" aria-label="Tabs">
+<div class="tabset" role="tablist" aria-label="Tabs">
     <input type="radio" name="tm" id="tm-features" checked>
     <input type="radio" name="tm" id="tm-included">
     <input type="radio" name="tm" id="tm-specs">
@@ -406,162 +407,165 @@
     <input type="radio" name="tm" id="tm-exploded">
 
     <div class="controls">
-      <label for="tm-features">Features</label>
-      <label for="tm-included">What’s Included</label>
-      <label for="tm-specs">Specs</label>
-      <label for="tm-gallery">Gallery</label>
-      <label for="tm-manuals">Manuals</label>
-      <label for="tm-exploded">Exploded Views</label>
-      <div class="indicator" aria-hidden="true"></div>
+        <label for="tm-features">Features</label>
+        <label for="tm-included">What’s Included</label>
+        <label for="tm-specs">Specs</label>
+        <label for="tm-gallery">Gallery</label>
+        <label for="tm-manuals">Manuals</label>
+        <label for="tm-exploded">Exploded Views</label>
+        <div class="indicator" aria-hidden="true"></div>
     </div>
 
     <div class="panels">
-      <div id="tm-panel-features" class="panel"></div>
-      <div id="tm-panel-included" class="panel"></div>
-      <div id="tm-panel-specs" class="panel"></div>
-      <div id="tm-panel-gallery" class="panel"></div>
-      <div id="tm-panel-manuals" class="panel"></div>
-      <div id="tm-panel-exploded" class="panel"></div>
+        <div id="tm-panel-features" class="panel"></div>
+        <div id="tm-panel-included" class="panel"></div>
+        <div id="tm-panel-specs" class="panel"></div>
+        <div id="tm-panel-gallery" class="panel"></div>
+        <div id="tm-panel-manuals" class="panel"></div>
+        <div id="tm-panel-exploded" class="panel"></div>
     </div>
-  </div>
+</div>
 
-  <script>
+<script>
     (function () {
-      const root = document.currentScript.closest('.tabs-models');
+        const root = document.currentScript.closest('.tabs-models');
 
-      // Build URL from attributes: data-source > data-base+data-part > default base
-      let url = root.getAttribute('data-source');
-      if (!url) {
-        const part = root.getAttribute('data-part') || '';
-        const v = root.getAttribute('data-v');
-        const base = root.getAttribute('data-base') || 'https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/data/';
-        if (part) {
-          url = base.replace(/\/?$/, '/') + encodeURIComponent(part) + '.json' + (v ? ('?v=' + encodeURIComponent(v)) : '');
+        // Build URL from attributes: data-source > data-base+data-part > default base
+        (function () {
+            const root = document.currentScript.closest('.tabs-models');
+
+            let url = root.getAttribute('data-source');
+            if (!url) {
+                const part = root.getAttribute('data-part') || '';
+                const v = root.getAttribute('data-v');
+                const base = root.getAttribute('data-base')
+                    || 'https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/data/';
+                if (part) url = base.replace(/\/?$/, '/') + encodeURIComponent(part) + '.json' + (v ? ('?v=' + encodeURIComponent(v)) : '');
+            }
+        })
+        if (!url) return;
+
+        fetch(url, { cache: 'no-store' })
+            .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+            .then(data => renderFromJson(data))
+            .catch(() => showFallback());
+
+        function renderFromJson(data) {
+            /* FEATURES */
+            if (Array.isArray(data.features)) {
+                const tiles = Array.isArray(data.featureTiles) ? buildFeatureTiles(data.featureTiles) : '';
+                const list = '<ul>' + data.features.map(item => `<li>${esc(item)}</li>`).join('') + '</ul>';
+                qs('#tm-panel-features').innerHTML = tiles + list;
+                const ul = qs('#tm-panel-features ul'); if (ul) ul.classList.add('two-col');
+            } else if (Array.isArray(data.featureTiles)) {
+                qs('#tm-panel-features').innerHTML = buildFeatureTiles(data.featureTiles);
+            }
+
+            /* INCLUDED */
+            if (Array.isArray(data.included)) {
+                qs('#tm-panel-included').innerHTML = '<ul>' + data.included.map(item => `<li>${esc(item)}</li>`).join('') + '</ul>';
+                const ul = qs('#tm-panel-included ul'); if (ul) ul.classList.add('two-col');
+            }
+
+            /* SPECS */
+            if (Array.isArray(data.specs)) {
+                const html = '<div class="specs">' + data.specs.map(row => {
+                    const k = esc(row?.[0] ?? ''); const v = esc(row?.[1] ?? '');
+                    return `<div><strong>${k}</strong> ${v}</div>`;
+                }).join('') + '</div>';
+                qs('#tm-panel-specs').innerHTML = html;
+            } else if (data.specs && typeof data.specs === 'object') {
+                const html = '<div class="specs">' + Object.entries(data.specs).map(([k, v]) => {
+                    return `<div><strong>${esc(k)}</strong> ${esc(String(v))}</div>`;
+                }).join('') + '</div>';
+                qs('#tm-panel-specs').innerHTML = html;
+            }
+
+            /* GALLERY */
+            const galBlocks = [];
+            const gy = data.gallery || {};
+            const yt = gy.youtube ? extractYouTubeId(gy.youtube) : '';
+            if (yt) galBlocks.push(`<div class="video"><iframe src="https://www.youtube.com/embed/${yt}" title="Product video" allowfullscreen loading="lazy"></iframe></div>`);
+            if (Array.isArray(gy.images) && gy.images.length) {
+                galBlocks.push(`<div class="gallery">` + gy.images.map(u => `<img src="${escAttr(u)}" alt="">`).join('') + `</div>`);
+            }
+            if (galBlocks.length) qs('#tm-panel-gallery').innerHTML = galBlocks.join('');
+
+            /* MANUALS */
+            if (Array.isArray(data.manuals) && data.manuals.length) {
+                qs('#tm-panel-manuals').innerHTML = buildPdfSection(data.manuals);
+            }
+            /* EXPLODED */
+            if (Array.isArray(data.exploded) && data.exploded.length) {
+                qs('#tm-panel-exploded').innerHTML = buildPdfSection(data.exploded);
+            }
         }
-      }
-      if (!url) return;
 
-      fetch(url, { cache: 'no-store' })
-        .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
-        .then(data => renderFromJson(data))
-        .catch(() => showFallback());
-
-      function renderFromJson(data) {
-        /* FEATURES */
-        if (Array.isArray(data.features)) {
-          const tiles = Array.isArray(data.featureTiles) ? buildFeatureTiles(data.featureTiles) : '';
-          const list = '<ul>' + data.features.map(item => `<li>${esc(item)}</li>`).join('') + '</ul>';
-          qs('#tm-panel-features').innerHTML = tiles + list;
-          const ul = qs('#tm-panel-features ul'); if (ul) ul.classList.add('two-col');
-        } else if (Array.isArray(data.featureTiles)) {
-          qs('#tm-panel-features').innerHTML = buildFeatureTiles(data.featureTiles);
+        /* Feature tiles builder */
+        function buildFeatureTiles(items) {
+            const arr = Array.isArray(items) ? items.slice(0, 4) : [];
+            const cols = Math.max(0, Math.min(arr.length, 4));
+            if (!cols) return "";
+            const tiles = arr.map(it => {
+                const top = esc(typeof it === 'object' && !Array.isArray(it) ? it.top : (it?.[0] ?? ''));
+                const bottom = esc(typeof it === 'object' && !Array.isArray(it) ? it.bottom : (it?.[1] ?? ''));
+                return `<div class="tile"><div class="t-top">${top}</div><div class="t-bottom">${bottom}</div></div>`;
+            }).join('');
+            return `<div class="feature-tiles" style="--cols:${cols}" role="group" aria-label="Key highlights">${tiles}</div>`;
         }
 
-        /* INCLUDED */
-        if (Array.isArray(data.included)) {
-          qs('#tm-panel-included').innerHTML = '<ul>' + data.included.map(item => `<li>${esc(item)}</li>`).join('') + '</ul>';
-          const ul = qs('#tm-panel-included ul'); if (ul) ul.classList.add('two-col');
-        }
-
-        /* SPECS */
-        if (Array.isArray(data.specs)) {
-          const html = '<div class="specs">' + data.specs.map(row => {
-            const k = esc(row?.[0] ?? ''); const v = esc(row?.[1] ?? '');
-            return `<div><strong>${k}</strong> ${v}</div>`;
-          }).join('') + '</div>';
-          qs('#tm-panel-specs').innerHTML = html;
-        } else if (data.specs && typeof data.specs === 'object') {
-          const html = '<div class="specs">' + Object.entries(data.specs).map(([k, v]) => {
-            return `<div><strong>${esc(k)}</strong> ${esc(String(v))}</div>`;
-          }).join('') + '</div>';
-          qs('#tm-panel-specs').innerHTML = html;
-        }
-
-        /* GALLERY */
-        const galBlocks = [];
-        const gy = data.gallery || {};
-        const yt = gy.youtube ? extractYouTubeId(gy.youtube) : '';
-        if (yt) galBlocks.push(`<div class="video"><iframe src="https://www.youtube.com/embed/${yt}" title="Product video" allowfullscreen loading="lazy"></iframe></div>`);
-        if (Array.isArray(gy.images) && gy.images.length) {
-          galBlocks.push(`<div class="gallery">` + gy.images.map(u => `<img src="${escAttr(u)}" alt="">`).join('') + `</div>`);
-        }
-        if (galBlocks.length) qs('#tm-panel-gallery').innerHTML = galBlocks.join('');
-
-        /* MANUALS */
-        if (Array.isArray(data.manuals) && data.manuals.length) {
-          qs('#tm-panel-manuals').innerHTML = buildPdfSection(data.manuals);
-        }
-        /* EXPLODED */
-        if (Array.isArray(data.exploded) && data.exploded.length) {
-          qs('#tm-panel-exploded').innerHTML = buildPdfSection(data.exploded);
-        }
-      }
-
-      /* Feature tiles builder */
-      function buildFeatureTiles(items) {
-        const arr = Array.isArray(items) ? items.slice(0, 4) : [];
-        const cols = Math.max(0, Math.min(arr.length, 4));
-        if (!cols) return "";
-        const tiles = arr.map(it => {
-          const top = esc(typeof it === 'object' && !Array.isArray(it) ? it.top : (it?.[0] ?? ''));
-          const bottom = esc(typeof it === 'object' && !Array.isArray(it) ? it.bottom : (it?.[1] ?? ''));
-          return `<div class="tile"><div class="t-top">${top}</div><div class="t-bottom">${bottom}</div></div>`;
-        }).join('');
-        return `<div class="feature-tiles" style="--cols:${cols}" role="group" aria-label="Key highlights">${tiles}</div>`;
-      }
-
-      /* Build PDF blocks + link list */
-      function buildPdfSection(items) {
-        const viewers = [];
-        const list = [];
-        items.forEach(m => {
-          const title = esc(m.title || 'PDF');
-          const rawUrl = String(m.url || '');
-          const viewerUrl = makePdfViewerUrl(rawUrl);
-          if (viewerUrl) {
-            viewers.push(
-              `<div class="pdf" aria-label="${escAttr(title)} PDF">
+        /* Build PDF blocks + link list */
+        function buildPdfSection(items) {
+            const viewers = [];
+            const list = [];
+            items.forEach(m => {
+                const title = esc(m.title || 'PDF');
+                const rawUrl = String(m.url || '');
+                const viewerUrl = makePdfViewerUrl(rawUrl);
+                if (viewerUrl) {
+                    viewers.push(
+                        `<div class="pdf" aria-label="${escAttr(title)} PDF">
                 <iframe src="${escAttr(viewerUrl)}" loading="lazy" title="${escAttr(title)}"></iframe>
               </div>`
-            );
-          }
-          list.push(`<li><a href="${escAttr(rawUrl)}" target="_blank" rel="noopener">${title}</a></li>`);
-        });
-        return (viewers.length ? viewers.join('') : '') + `<ul>${list.join('')}</ul>`;
-      }
+                    );
+                }
+                list.push(`<li><a href="${escAttr(rawUrl)}" target="_blank" rel="noopener">${title}</a></li>`);
+            });
+            return (viewers.length ? viewers.join('') : '') + `<ul>${list.join('')}</ul>`;
+        }
 
-      /* Helpers */
-      function qs(sel) { return root.querySelector(sel); }
-      function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
-      function escAttr(s) { return esc(s).replace(/"/g, '&quot;'); }
-      function extractYouTubeId(input) {
-        if (!input) return '';
-        const str = String(input);
-        const m = str.match(/(?:v=|be\/|embed\/)([A-Za-z0-9_-]{6,})/);
-        return m ? m[1] : str;
-      }
-      function makePdfViewerUrl(input) {
-        if (!input) return '';
-        const url = String(input).trim();
-        if (/\.(pdf)(\?|#|$)/i.test(url)) return url;
-        const driveId = url.match(/drive\.google\.com\/file\/d\/([^/]+)/)?.[1] || url.match(/[?&]id=([^&]+)/)?.[1];
-        if (driveId) return `https://drive.google.com/file/d/${encodeURIComponent(driveId)}/preview`;
-        if (/dropbox\.com\//i.test(url)) {
-          const dl = url.replace(/(\?dl=\d)?$/, '?dl=1');
-          return `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(dl)}`;
+        /* Helpers */
+        function qs(sel) { return root.querySelector(sel); }
+        function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+        function escAttr(s) { return esc(s).replace(/"/g, '&quot;'); }
+        function extractYouTubeId(input) {
+            if (!input) return '';
+            const str = String(input);
+            const m = str.match(/(?:v=|be\/|embed\/)([A-Za-z0-9_-]{6,})/);
+            return m ? m[1] : str;
         }
-        if (/^https?:\/\//i.test(url)) {
-          return `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(url)}`;
+        function makePdfViewerUrl(input) {
+            if (!input) return '';
+            const url = String(input).trim();
+            if (/\.(pdf)(\?|#|$)/i.test(url)) return url;
+            const driveId = url.match(/drive\.google\.com\/file\/d\/([^/]+)/)?.[1] || url.match(/[?&]id=([^&]+)/)?.[1];
+            if (driveId) return `https://drive.google.com/file/d/${encodeURIComponent(driveId)}/preview`;
+            if (/dropbox\.com\//i.test(url)) {
+                const dl = url.replace(/(\?dl=\d)?$/, '?dl=1');
+                return `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(dl)}`;
+            }
+            if (/^https?:\/\//i.test(url)) {
+                return `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(url)}`;
+            }
+            return '';
         }
-        return '';
-      }
-      function showFallback() {
-        const msg = '<p style="opacity:.8">Content unavailable.</p>';
-        ['features', 'included', 'specs', 'gallery', 'manuals', 'exploded'].forEach(k => {
-          const el = qs('#tm-panel-' + k);
-          if (el && !el.innerHTML) el.innerHTML = msg;
-        });
-      }
+        function showFallback() {
+            const msg = '<p style="opacity:.8">Content unavailable.</p>';
+            ['features', 'included', 'specs', 'gallery', 'manuals', 'exploded'].forEach(k => {
+                const el = qs('#tm-panel-' + k);
+                if (el && !el.innerHTML) el.innerHTML = msg;
+            });
+        }
     })();
-  </script>
+</script>
 </section>
