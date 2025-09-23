@@ -1,80 +1,191 @@
 {
-  "featureTiles": [
-    { "top": "Scale", "bottom": "1/10" },
-    { "top": "Top Speed", "bottom": "60+ mph" },
-    { "top": "Power System", "bottom": "VXL-4s™ Brushless" },
-    { "top": "Battery & Charger", "bottom": "Sold Separately" }
-  ],
-
-  "features": [
-    "6061-T6 aluminum upgrades across steering and drivetrain",
-    "Velineon® 540XL 2400 Kv brushless motor with heat sink and fan",
-    "VXL-4s™ waterproof ESC with real-time telemetry",
-    "Traxxas Stability Management® for control",
-    "WideMaxx® suspension with GT-Maxx® aluminum shocks",
-    "Clipless ProGraphix® body with molded reinforcements",
-    "Full-time shaft-driven 4WD with steel CV driveshafts and Cush Drive™ spur gear",
-    "2085RL high-output metal gear steering servo - 650 oz-in",
-    "2.8 in black chrome wheels with Sledgehammer® tires"
-  ],
-
-  "included": [
-    "Maxx Ultimate with Velineon® 540XL brushless motor",
-    "VXL-4s waterproof ESC with integrated telemetry",
-    "TQi™ 2.4 GHz radio system with wireless module",
-    "Quick Start Guide",
-    "High quality maintenance tools"
-  ],
-
-  "specs": [
-    ["Model Name", "Maxx Ultimate"],
-    ["Type", "Monster Truck"],
-    ["Top Speed", "60+ mph with 4s LiPo & optional gearing"],
-    ["Model Skill Level", "4"],
-    ["Scale", "1/10"],
-    ["Weight", "10.20 lb (4.63 kg)"],
-    ["Length", "22.50 in (572 mm)"],
-    ["Width", "15.95 in (405 mm)"],
-    ["Track", "15.95 in (405 mm)"],
-    ["Height", "9.12 in (232 mm)"],
-    ["Wheelbase", "13.85 in (352 mm)"],
-    ["Ground Clearance", "2.6 in (67 mm)"],
-    ["Drivetrain", "Shaft-driven 4WD"],
-    ["Transmission", "Single speed"],
-    ["Differential Type", "Sealed hardened steel bevel, limited slip"],
-    ["Gear Ratio (Internal)", "12.37:1"],
-    ["Gear Pitch", "1.0 metric pitch"],
-    ["Servo", "2085RL metal gear ultra-high-torque (650 oz-in)"],
-    ["Radio System", "TQi™ 2.4 GHz 2-channel with wireless module"],
-    ["Battery Compartment", "186 mm x 48 mm x 43 mm"],
-    ["Motor", "Velineon® 540XL 2400 Kv brushless"],
-    ["Motor Weight", "317 g (11.18 oz)"],
-    ["Motor Length", "3.58 in (91 mm)"],
-    ["Motor Diameter", "1.41 in (36 mm)"],
-    ["Motor Shaft Size", "5 mm"],
-    ["ESC", "Velineon® VXL-4s Brushless"],
-    ["ESC Size", "72 mm x 59 mm x 49 mm"],
-    ["ESC Weight", "201 g (7.09 oz)"],
-    ["Connector Type", "Traxxas High-Current with 6.5 mm bullet connectors"]
-  ],
-
-  "gallery": {
-    "youtube": "https://www.youtube.com/watch?v=UF2LRFQTFoM&t=1s"
-  },
-
-  "manuals": [
-    {
-      "title": "Owner's Manual PDF",
-      "url": "https://traxxasdirect.com/media/productattach/89087-4/2/89087-4-OM-EN-R00.pdf"
-    }
-  ],
-
-  "exploded": [
-    { "title": "Exploded - Front Assembly",    "url": "https://images.editor.website/uploads/b/a3a00f925db3c324a53180a73dd9ad569492e3ab5623fda089d17c60fbba0aac/89087-4_TQi_explodedviews_250702_89087-4_20Front_20Assembly_1758588311.png?width=400&optimize=medium" },
-    { "title": "Exploded - Chassis Assembly", "url": "https://images.editor.website/uploads/b/a3a00f925db3c324a53180a73dd9ad569492e3ab5623fda089d17c60fbba0aac/89087-4_TQi_explodedviews_250702_89087-4_20Chassis_20Assembly_1758588310.png?width=400&optimize=medium" },
-    { "title": "Exploded - Body Assembly", "url": "https://images.editor.website/uploads/b/a3a00f925db3c324a53180a73dd9ad569492e3ab5623fda089d17c60fbba0aac/89087-4_TQi_explodedviews_250702_89087-4_20Body_20Assembly_1758588310.png?width=400&optimize=medium" },
-    { "title": "Exploded - Rear Assembly",   "url": "https://images.editor.website/uploads/b/a3a00f925db3c324a53180a73dd9ad569492e3ab5623fda089d17c60fbba0aac/89087-4_TQi_explodedviews_250702_89087-4_20Rear_20Assembly_1758588311.png?width=400&optimize=medium" },
-    { "title": "Exploded - Transmission Assembly", "url": "https://images.editor.website/uploads/b/a3a00f925db3c324a53180a73dd9ad569492e3ab5623fda089d17c60fbba0aac/89087-4_TQi_explodedviews_250702_89087-4_20Transmission_20Assembly_1758588310.png?width=400&optimize=medium" },
-    { "title": "Exploded - Modular Assembly", "url": "https://images.editor.website/uploads/b/a3a00f925db3c324a53180a73dd9ad569492e3ab5623fda089d17c60fbba0aac/89087-4_TQi_explodedviews_250702_89087-4_20Modular_20Assembly_1758588310.png?width=400&optimize=medium" }
-  ]
+    "featureTiles": [
+        {
+            "top": "Scale",
+            "bottom": "1/10"
+        },
+        {
+            "top": "Top Speed",
+            "bottom": "60+ mph"
+        },
+        {
+            "top": "Power System",
+            "bottom": "VXL-4s™ Brushless"
+        },
+        {
+            "top": "Battery & Charger",
+            "bottom": "Sold Separately"
+        }
+    ],
+    "features": [
+        "6061-T6 aluminum upgrades across steering and drivetrain",
+        "Velineon® 540XL 2400 Kv brushless motor with heat sink and fan",
+        "VXL-4s™ waterproof ESC with real-time telemetry",
+        "Traxxas Stability Management® for control",
+        "WideMaxx® suspension with GT-Maxx® aluminum shocks",
+        "Clipless ProGraphix® body with molded reinforcements",
+        "Full-time shaft-driven 4WD with steel CV driveshafts and Cush Drive™ spur gear",
+        "2085RL high-output metal gear steering servo - 650 oz-in",
+        "2.8 in black chrome wheels with Sledgehammer® tires"
+    ],
+    "included": [
+        "Maxx Ultimate with Velineon® 540XL brushless motor",
+        "VXL-4s waterproof ESC with integrated telemetry",
+        "TQi™ 2.4 GHz radio system with wireless module",
+        "Quick Start Guide",
+        "High quality maintenance tools"
+    ],
+    "specs": [
+        [
+            "Model Name",
+            "Maxx Ultimate"
+        ],
+        [
+            "Type",
+            "Monster Truck"
+        ],
+        [
+            "Top Speed",
+            "60+ mph with 4s LiPo & optional gearing"
+        ],
+        [
+            "Model Skill Level",
+            "4"
+        ],
+        [
+            "Scale",
+            "1/10"
+        ],
+        [
+            "Weight",
+            "10.20 lb (4.63 kg)"
+        ],
+        [
+            "Length",
+            "22.50 in (572 mm)"
+        ],
+        [
+            "Width",
+            "15.95 in (405 mm)"
+        ],
+        [
+            "Track",
+            "15.95 in (405 mm)"
+        ],
+        [
+            "Height",
+            "9.12 in (232 mm)"
+        ],
+        [
+            "Wheelbase",
+            "13.85 in (352 mm)"
+        ],
+        [
+            "Ground Clearance",
+            "2.6 in (67 mm)"
+        ],
+        [
+            "Drivetrain",
+            "Shaft-driven 4WD"
+        ],
+        [
+            "Transmission",
+            "Single speed"
+        ],
+        [
+            "Differential Type",
+            "Sealed hardened steel bevel, limited slip"
+        ],
+        [
+            "Gear Ratio (Internal)",
+            "12.37:1"
+        ],
+        [
+            "Gear Pitch",
+            "1.0 metric pitch"
+        ],
+        [
+            "Servo",
+            "2085RL metal gear ultra-high-torque (650 oz-in)"
+        ],
+        [
+            "Radio System",
+            "TQi™ 2.4 GHz 2-channel with wireless module"
+        ],
+        [
+            "Battery Compartment",
+            "186 mm x 48 mm x 43 mm"
+        ],
+        [
+            "Motor",
+            "Velineon® 540XL 2400 Kv brushless"
+        ],
+        [
+            "Motor Weight",
+            "317 g (11.18 oz)"
+        ],
+        [
+            "Motor Length",
+            "3.58 in (91 mm)"
+        ],
+        [
+            "Motor Diameter",
+            "1.41 in (36 mm)"
+        ],
+        [
+            "Motor Shaft Size",
+            "5 mm"
+        ],
+        [
+            "ESC",
+            "Velineon® VXL-4s Brushless"
+        ],
+        [
+            "ESC Size",
+            "72 mm x 59 mm x 49 mm"
+        ],
+        [
+            "ESC Weight",
+            "201 g (7.09 oz)"
+        ],
+        [
+            "Connector Type",
+            "Traxxas High-Current with 6.5 mm bullet connectors"
+        ]
+    ],
+    "gallery": {
+        "youtube": "https://www.youtube.com/watch?v=UF2LRFQTFoM&t=1s"
+    },
+    "manuals": [
+        {
+            "title": "Owner's Manual PDF",
+            "url": "https://traxxasdirect.com/media/productattach/89087-4/2/89087-4-OM-EN-R00.pdf"
+        }
+    ],
+    "exploded": [
+        {
+            "title": "Exploded - Front Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/yourname/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Front_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Chassis Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/yourname/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Chassis_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Body Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/yourname/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Body_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Rear Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/yourname/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Rear_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Transmission Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/yourname/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Transmission_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Modular Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/yourname/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Modular_20Assembly.png"
+        }
+    ]
 }
