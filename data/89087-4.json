@@ -172,9 +172,9 @@
         }
     ],
     "exploded": [
-    {
-      "title": "Exploded View PDF",
-      "url": "https://github.com/traffy-sod/rc-item-json/blob/main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4.pdf"
-    }
-  ]
+        {
+            "title": "Exploded View PDF",
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4.pdf"
+        }
+    ]
 }
