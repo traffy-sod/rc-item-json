@@ -28,13 +28,22 @@
         "2085RL high-output metal gear steering servo - 650 oz-in",
         "2.8 in black chrome wheels with Sledgehammer® tires"
     ],
-    "included": [
-        "Maxx Ultimate with Velineon® 540XL brushless motor",
-        "VXL-4s waterproof ESC with integrated telemetry",
-        "TQi™ 2.4 GHz radio system with wireless module",
-        "Quick Start Guide",
-        "High quality maintenance tools"
-    ],
+    "included": {
+        "inBox": [
+            "Maxx Ultimate with Velineon® 540XL brushless motor",
+            "VXL-4s waterproof electronic speed control with integrated telemetry",
+            "TQi 2.4 GHz radio system with factory-installed wireless module",
+            "ProGraphix® painted clipless body",
+            "Quick Start Guide",
+            "High quality maintenance tools"
+        ],
+        "required": [
+            "4-cell 14.8V Power Cell LiPo battery (recommended for maximum performance)",
+            "3-cell 11.1V Power Cell LiPo battery (compatible with reduced performance, NiMH not supported)",
+            "Traxxas iD®-equipped LiPo Balance Charger",
+            "Four AA alkaline batteries for the transmitter"
+        ]
+    },
     "specs": [
         [
             "Model Name",
@@ -164,28 +173,28 @@
     ],
     "exploded": [
         {
-            "title": "Exploded - Front Assembly",
-            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Front_20Assembly.png"
+            "title": "Exploded - Body Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4_20Body_20Assembly.png"
         },
         {
             "title": "Exploded - Chassis Assembly",
-            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Chassis_20Assembly.png"
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4_20Chassis_20Assembly.png"
         },
         {
-            "title": "Exploded - Body Assembly",
-            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Body_20Assembly.png"
-        },
-        {
-            "title": "Exploded - Rear Assembly",
-            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Rear_20Assembly.png"
-        },
-        {
-            "title": "Exploded - Transmission Assembly",
-            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Transmission_20Assembly.png"
+            "title": "Exploded - Front Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4_20Front_20Assembly.png"
         },
         {
             "title": "Exploded - Modular Assembly",
-            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/RC-item-JSON@main/assets/exploded/89087-4/89087-4_TQi_explodedviews_250702_89087-4_20Modular_20Assembly.png"
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4_20Modular_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Rear Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4_20Rear_20Assembly.png"
+        },
+        {
+            "title": "Exploded - Transmission Assembly",
+            "url": "https://cdn.jsdelivr.net/gh/traffy-sod/rc-item-json@main/assets/exploded/89087-4_TQi_explodedviews_250702_89087-4_20Transmission_20Assembly.png"
         }
     ]
 }
